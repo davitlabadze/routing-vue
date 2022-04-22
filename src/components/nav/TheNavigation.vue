@@ -3,13 +3,10 @@
     <nav>
       <ul>
         <li>
-          <!-- <button @click="setActivePage('teams-list')">Teams</button> -->
           <router-link to="/teams">Temas</router-link>
         </li>
         <li>
-          <!-- <button @click="setActivePage('users-list')">Users</button> -->
           <router-link to="/users">Users</router-link>
-
         </li>
       </ul>
     </nav>
@@ -53,7 +50,8 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+a.router-link-active {
   color: #f1a80a;
   border-color: #f1a80a;
   background-color: #1a037e;
