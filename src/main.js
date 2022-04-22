@@ -40,6 +40,18 @@ const router = createRouter({
   }
 });
 
+router.beforeEach(function(to,from,next){
+  console.log('Global beforeEach');
+  console.log(to, from);
+  // if(to.name === 'team-members') {
+  //   next();
+  // }else{
+  //   next({name: 'team-members', params: {teamId: 't2'}});
+  // }
+  next();
+
+});
+
 const app = createApp(App);
 
 app.use(router);
