@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/teams">Temas</router-link>
+          <router-link to="/teams">Teams</router-link>
         </li>
         <li>
           <router-link to="/users">Users</router-link>
@@ -12,7 +12,6 @@
     </nav>
   </header>
 </template>
-
 
 <style scoped>
 header {
